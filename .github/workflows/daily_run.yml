@@ -13,7 +13,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: python main.py
+      - name: Install dependencies
+        run: pip install -r dev-requirements.txt
+      - name: Lint
+        run: ruff check main.py --select=E,F --ignore=E501
+      - name: Run agent
+        run: python main.py
       - name: Commit and push
         run: |
           git config user.name "${{ github.actor }}"
