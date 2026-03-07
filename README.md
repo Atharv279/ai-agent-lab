@@ -2,7 +2,7 @@
 
 # 🧪 AI Agent Lab
 
-[![Daily Run](https://github.com/USER/ai-agent-lab/actions/workflows/daily_run.yml/badge.svg)](https://github.com/USER/ai-agent-lab/actions/workflows/daily_run.yml)
+[![Daily Run](https://github.com/Atharv279/ai-agent-lab/actions/workflows/daily_run.yml/badge.svg)](https://github.com/Atharv279/ai-agent-lab/actions/workflows/daily_run.yml)
 ![Python](https://img.shields.io/badge/Python-3.11+-3776ab?logo=python&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Automated](https://img.shields.io/badge/Runs-Daily%20via%20CI-blue)
