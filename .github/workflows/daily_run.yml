@@ -1,0 +1,23 @@
+name: Daily Agent Lab Orchestration
+on:
+  schedule:
+    - cron: "20 8 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python main.py
+      - name: Commit and push
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
+          git add logs/
+          git diff --cached --quiet || git commit -m "ai-agent-lab: orchestration run $(date -u +%Y-%m-%d)"
+          git push || echo "Nothing to push"
