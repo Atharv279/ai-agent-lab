@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """AI Agent Lab — LLM orchestration simulator with pipeline visualization."""
-import json, os, random, datetime, hashlib, glob
+import json
+import os
+import random
+import datetime
+import hashlib
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-import numpy as np
 
 AGENTS = {
     "planner": {"role": "Decomposes tasks into subtasks", "temp": 0.3, "color": "#3498db"},
@@ -178,7 +181,7 @@ def main():
 
     with open(f"logs/{date_str}.md", "w") as f:
         f.write("\n".join(md))
-    print(f"[ai-agent-lab] v2.0 report + charts generated")
+    print("[ai-agent-lab] v2.0 report + charts generated")
 
 if __name__ == "__main__":
     main()
