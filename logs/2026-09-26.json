@@ -1,339 +1,339 @@
 {
-  "timestamp": "2026-09-26T13:07:23.779447+00:00",
-  "run_id": "6e27f9a024",
+  "timestamp": "2026-09-26T17:46:21.828549+00:00",
+  "run_id": "03511ce84c",
   "tasks_processed": 4,
   "results": [
     {
-      "task": "Refactor legacy codebase to use dependency injection",
+      "task": "Design a caching strategy for high-traffic endpoints",
       "pipeline": [
         {
           "agent": "planner",
           "role": "Decomposes tasks into subtasks",
           "temperature": 0.3,
-          "latency_seconds": 0.787,
+          "latency_seconds": 2.265,
           "tokens": {
-            "input": 403,
-            "output": 725,
-            "total": 1128
+            "input": 369,
+            "output": 430,
+            "total": 799
           },
-          "quality_score": 0.843,
+          "quality_score": 0.818,
           "status": "success"
         },
         {
           "agent": "researcher",
           "role": "Gathers information from knowledge base",
           "temperature": 0.5,
-          "latency_seconds": 2.457,
+          "latency_seconds": 0.743,
           "tokens": {
-            "input": 357,
-            "output": 583,
-            "total": 940
+            "input": 125,
+            "output": 674,
+            "total": 799
           },
-          "quality_score": 0.523,
+          "quality_score": 0.565,
           "status": "needs_retry"
         },
         {
           "agent": "coder",
           "role": "Generates code solutions",
           "temperature": 0.2,
-          "latency_seconds": 0.326,
+          "latency_seconds": 2.435,
           "tokens": {
-            "input": 235,
-            "output": 576,
-            "total": 811
+            "input": 299,
+            "output": 748,
+            "total": 1047
           },
-          "quality_score": 0.671,
+          "quality_score": 0.899,
           "status": "success"
         },
         {
           "agent": "reviewer",
           "role": "Reviews and critiques outputs",
           "temperature": 0.4,
-          "latency_seconds": 2.043,
+          "latency_seconds": 1.261,
           "tokens": {
-            "input": 207,
-            "output": 103,
-            "total": 310
+            "input": 385,
+            "output": 728,
+            "total": 1113
           },
-          "quality_score": 0.694,
+          "quality_score": 0.738,
           "status": "success"
         },
         {
           "agent": "synthesizer",
           "role": "Combines agent outputs into final answer",
           "temperature": 0.3,
-          "latency_seconds": 1.062,
+          "latency_seconds": 0.285,
           "tokens": {
-            "input": 307,
-            "output": 527,
-            "total": 834
+            "input": 393,
+            "output": 430,
+            "total": 823
           },
-          "quality_score": 0.994,
+          "quality_score": 0.62,
           "status": "success"
         }
       ],
       "metrics": {
-        "total_latency": 6.675,
-        "total_tokens": 4023,
-        "avg_quality": 0.745,
+        "total_latency": 6.989,
+        "total_tokens": 4581,
+        "avg_quality": 0.728,
         "agents_used": 5,
         "retries_needed": 1
       }
     },
     {
-      "task": "Implement rate limiting middleware",
+      "task": "Analyze CSV data and generate statistical summary",
       "pipeline": [
         {
           "agent": "planner",
           "role": "Decomposes tasks into subtasks",
           "temperature": 0.3,
-          "latency_seconds": 1.221,
+          "latency_seconds": 1.955,
           "tokens": {
-            "input": 430,
-            "output": 428,
-            "total": 858
+            "input": 153,
+            "output": 159,
+            "total": 312
           },
-          "quality_score": 0.891,
+          "quality_score": 0.898,
           "status": "success"
         },
         {
           "agent": "researcher",
           "role": "Gathers information from knowledge base",
           "temperature": 0.5,
-          "latency_seconds": 2.245,
+          "latency_seconds": 0.365,
+          "tokens": {
+            "input": 246,
+            "output": 584,
+            "total": 830
+          },
+          "quality_score": 0.773,
+          "status": "success"
+        },
+        {
+          "agent": "coder",
+          "role": "Generates code solutions",
+          "temperature": 0.2,
+          "latency_seconds": 2.134,
+          "tokens": {
+            "input": 199,
+            "output": 417,
+            "total": 616
+          },
+          "quality_score": 0.515,
+          "status": "needs_retry"
+        },
+        {
+          "agent": "reviewer",
+          "role": "Reviews and critiques outputs",
+          "temperature": 0.4,
+          "latency_seconds": 0.912,
+          "tokens": {
+            "input": 210,
+            "output": 683,
+            "total": 893
+          },
+          "quality_score": 0.777,
+          "status": "success"
+        },
+        {
+          "agent": "synthesizer",
+          "role": "Combines agent outputs into final answer",
+          "temperature": 0.3,
+          "latency_seconds": 1.026,
+          "tokens": {
+            "input": 302,
+            "output": 788,
+            "total": 1090
+          },
+          "quality_score": 0.782,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "total_latency": 6.392,
+        "total_tokens": 3741,
+        "avg_quality": 0.749,
+        "agents_used": 5,
+        "retries_needed": 1
+      }
+    },
+    {
+      "task": "Build a REST API for user authentication",
+      "pipeline": [
+        {
+          "agent": "planner",
+          "role": "Decomposes tasks into subtasks",
+          "temperature": 0.3,
+          "latency_seconds": 1.026,
+          "tokens": {
+            "input": 146,
+            "output": 330,
+            "total": 476
+          },
+          "quality_score": 0.748,
+          "status": "success"
+        },
+        {
+          "agent": "researcher",
+          "role": "Gathers information from knowledge base",
+          "temperature": 0.5,
+          "latency_seconds": 1.084,
+          "tokens": {
+            "input": 193,
+            "output": 402,
+            "total": 595
+          },
+          "quality_score": 0.851,
+          "status": "success"
+        },
+        {
+          "agent": "coder",
+          "role": "Generates code solutions",
+          "temperature": 0.2,
+          "latency_seconds": 0.4,
           "tokens": {
             "input": 264,
-            "output": 175,
-            "total": 439
+            "output": 281,
+            "total": 545
           },
-          "quality_score": 0.867,
-          "status": "success"
-        },
-        {
-          "agent": "coder",
-          "role": "Generates code solutions",
-          "temperature": 0.2,
-          "latency_seconds": 0.182,
-          "tokens": {
-            "input": 233,
-            "output": 368,
-            "total": 601
-          },
-          "quality_score": 0.946,
+          "quality_score": 0.731,
           "status": "success"
         },
         {
           "agent": "reviewer",
           "role": "Reviews and critiques outputs",
           "temperature": 0.4,
-          "latency_seconds": 0.3,
+          "latency_seconds": 1.282,
           "tokens": {
-            "input": 460,
-            "output": 226,
-            "total": 686
+            "input": 299,
+            "output": 405,
+            "total": 704
           },
-          "quality_score": 0.716,
+          "quality_score": 0.636,
           "status": "success"
         },
         {
           "agent": "synthesizer",
           "role": "Combines agent outputs into final answer",
           "temperature": 0.3,
-          "latency_seconds": 0.89,
+          "latency_seconds": 1.691,
           "tokens": {
-            "input": 427,
-            "output": 178,
-            "total": 605
+            "input": 445,
+            "output": 645,
+            "total": 1090
           },
-          "quality_score": 0.998,
+          "quality_score": 0.91,
           "status": "success"
         }
       ],
       "metrics": {
-        "total_latency": 4.838,
-        "total_tokens": 3189,
-        "avg_quality": 0.884,
+        "total_latency": 5.483,
+        "total_tokens": 3410,
+        "avg_quality": 0.775,
         "agents_used": 5,
         "retries_needed": 0
       }
     },
     {
-      "task": "Write integration tests for payment processing module",
+      "task": "Create a data migration script for schema v2",
       "pipeline": [
         {
           "agent": "planner",
           "role": "Decomposes tasks into subtasks",
           "temperature": 0.3,
-          "latency_seconds": 0.285,
+          "latency_seconds": 0.666,
           "tokens": {
-            "input": 85,
-            "output": 467,
-            "total": 552
+            "input": 151,
+            "output": 786,
+            "total": 937
           },
-          "quality_score": 0.645,
+          "quality_score": 0.697,
           "status": "success"
         },
         {
           "agent": "researcher",
           "role": "Gathers information from knowledge base",
           "temperature": 0.5,
-          "latency_seconds": 2.152,
+          "latency_seconds": 2.437,
           "tokens": {
-            "input": 256,
-            "output": 661,
-            "total": 917
+            "input": 203,
+            "output": 793,
+            "total": 996
           },
-          "quality_score": 0.963,
+          "quality_score": 0.684,
           "status": "success"
         },
         {
           "agent": "coder",
           "role": "Generates code solutions",
           "temperature": 0.2,
-          "latency_seconds": 2.449,
+          "latency_seconds": 0.556,
           "tokens": {
-            "input": 403,
-            "output": 218,
-            "total": 621
+            "input": 481,
+            "output": 521,
+            "total": 1002
           },
-          "quality_score": 0.758,
+          "quality_score": 0.684,
           "status": "success"
         },
         {
           "agent": "reviewer",
           "role": "Reviews and critiques outputs",
           "temperature": 0.4,
-          "latency_seconds": 1.757,
+          "latency_seconds": 0.432,
           "tokens": {
-            "input": 426,
-            "output": 667,
-            "total": 1093
+            "input": 134,
+            "output": 566,
+            "total": 700
           },
-          "quality_score": 0.981,
+          "quality_score": 0.688,
           "status": "success"
         },
         {
           "agent": "synthesizer",
           "role": "Combines agent outputs into final answer",
           "temperature": 0.3,
-          "latency_seconds": 2.335,
+          "latency_seconds": 1.829,
           "tokens": {
-            "input": 254,
-            "output": 109,
-            "total": 363
+            "input": 330,
+            "output": 227,
+            "total": 557
           },
-          "quality_score": 0.98,
+          "quality_score": 0.913,
           "status": "success"
         }
       ],
       "metrics": {
-        "total_latency": 8.978,
-        "total_tokens": 3546,
-        "avg_quality": 0.865,
+        "total_latency": 5.92,
+        "total_tokens": 4192,
+        "avg_quality": 0.733,
         "agents_used": 5,
         "retries_needed": 0
-      }
-    },
-    {
-      "task": "Build a CLI tool for log analysis",
-      "pipeline": [
-        {
-          "agent": "planner",
-          "role": "Decomposes tasks into subtasks",
-          "temperature": 0.3,
-          "latency_seconds": 1.377,
-          "tokens": {
-            "input": 279,
-            "output": 104,
-            "total": 383
-          },
-          "quality_score": 0.749,
-          "status": "success"
-        },
-        {
-          "agent": "researcher",
-          "role": "Gathers information from knowledge base",
-          "temperature": 0.5,
-          "latency_seconds": 0.781,
-          "tokens": {
-            "input": 78,
-            "output": 697,
-            "total": 775
-          },
-          "quality_score": 0.541,
-          "status": "needs_retry"
-        },
-        {
-          "agent": "coder",
-          "role": "Generates code solutions",
-          "temperature": 0.2,
-          "latency_seconds": 1.61,
-          "tokens": {
-            "input": 473,
-            "output": 526,
-            "total": 999
-          },
-          "quality_score": 0.568,
-          "status": "needs_retry"
-        },
-        {
-          "agent": "reviewer",
-          "role": "Reviews and critiques outputs",
-          "temperature": 0.4,
-          "latency_seconds": 2.092,
-          "tokens": {
-            "input": 390,
-            "output": 660,
-            "total": 1050
-          },
-          "quality_score": 0.98,
-          "status": "success"
-        },
-        {
-          "agent": "synthesizer",
-          "role": "Combines agent outputs into final answer",
-          "temperature": 0.3,
-          "latency_seconds": 1.841,
-          "tokens": {
-            "input": 198,
-            "output": 299,
-            "total": 497
-          },
-          "quality_score": 0.774,
-          "status": "success"
-        }
-      ],
-      "metrics": {
-        "total_latency": 7.701,
-        "total_tokens": 3704,
-        "avg_quality": 0.722,
-        "agents_used": 5,
-        "retries_needed": 2
       }
     }
   ],
   "aggregate": {
-    "avg_latency": 7.048,
-    "total_tokens": 14462,
-    "avg_quality": 0.804
+    "avg_latency": 6.196,
+    "total_tokens": 15924,
+    "avg_quality": 0.746
   },
   "delta": {
     "status": "compared",
     "deltas": {
       "avg_latency": {
-        "today": 7.048,
+        "today": 6.196,
         "yesterday": 6.297,
-        "change_pct": 11.9
+        "change_pct": -1.6
       },
       "total_tokens": {
-        "today": 14462,
+        "today": 15924,
         "yesterday": 15175,
-        "change_pct": -4.7
+        "change_pct": 4.9
       },
       "avg_quality": {
-        "today": 0.804,
+        "today": 0.746,
         "yesterday": 0.733,
-        "change_pct": 9.7
+        "change_pct": 1.8
       }
     }
   }
